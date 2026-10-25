@@ -5,21 +5,21 @@
 class Plat5 < Formula
   desc "Run Plat5 locally and manage its routes and roles"
   homepage "https://www.plat5.com"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/plat5dev/cli/releases/download/v0.7.0/plat5_0.7.0_darwin_amd64.tar.gz"
-      sha256 "550b909d6fb8f7e6fd06c4eed643696a62cd1a5ef90230880016d8605099a975"
+      url "https://github.com/plat5dev/cli/releases/download/v0.8.0/plat5_0.8.0_darwin_amd64.tar.gz"
+      sha256 "77a5a82d9ed829c6838760352e6d447e268129aa2bb06c6f8f2a7a6ccc8fd834"
 
       define_method(:install) do
         bin.install "plat5"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/plat5dev/cli/releases/download/v0.7.0/plat5_0.7.0_darwin_arm64.tar.gz"
-      sha256 "c1c27398e9f5689d5c78005ab19b989ebf13dc913d70e5e0b47f45daac5dc015"
+      url "https://github.com/plat5dev/cli/releases/download/v0.8.0/plat5_0.8.0_darwin_arm64.tar.gz"
+      sha256 "52a0b765abc81a63c001ab19487549b41cd574ed5c3992dee06d4dedc92756e9"
 
       define_method(:install) do
         bin.install "plat5"
@@ -29,15 +29,15 @@ class Plat5 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/plat5dev/cli/releases/download/v0.7.0/plat5_0.7.0_linux_amd64.tar.gz"
-      sha256 "29fb23757c3d07dea350b01ebf0680df741e2447efc96ff4107495cca3264d68"
+      url "https://github.com/plat5dev/cli/releases/download/v0.8.0/plat5_0.8.0_linux_amd64.tar.gz"
+      sha256 "c417d703d1cc21cb640c06b04fa1d608dc47e2e43bb20347102b57320376ed6b"
       define_method(:install) do
         bin.install "plat5"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/plat5dev/cli/releases/download/v0.7.0/plat5_0.7.0_linux_arm64.tar.gz"
-      sha256 "2a2f49759b328651f613c487907a90c3fbf1f2c568f53fffce765c8887a4bc38"
+      url "https://github.com/plat5dev/cli/releases/download/v0.8.0/plat5_0.8.0_linux_arm64.tar.gz"
+      sha256 "abe19f55ae7b459c293b131c010620fecd903c46889df2061780d595a6d4f23d"
       define_method(:install) do
         bin.install "plat5"
       end
