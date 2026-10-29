@@ -5,21 +5,21 @@
 class Plat5 < Formula
   desc "Run Plat5 locally and manage its routes and roles"
   homepage "https://www.plat5.com"
-  version "0.11.0"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/plat5dev/cli/releases/download/v0.11.0/plat5_0.11.0_darwin_amd64.tar.gz"
-      sha256 "9a50d95a0019bfd3ca336bdf20f23c7e08aaf3905da77580496bd18e053b15ae"
+      url "https://github.com/plat5dev/cli/releases/download/v0.12.0/plat5_0.12.0_darwin_amd64.tar.gz"
+      sha256 "fe62f6bfef2f5081fae3fbe8a164419e4f8158c7ff9f091c3bc25d1467a60872"
 
       define_method(:install) do
         bin.install "plat5"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/plat5dev/cli/releases/download/v0.11.0/plat5_0.11.0_darwin_arm64.tar.gz"
-      sha256 "38d75386e9362064b73608016d37cfeaa2b763d262652cd659708dbe80593003"
+      url "https://github.com/plat5dev/cli/releases/download/v0.12.0/plat5_0.12.0_darwin_arm64.tar.gz"
+      sha256 "94ae1b0eb7597926f85d1b3b0ec64d772ac334be3d6c3053bd34a317d7b254b0"
 
       define_method(:install) do
         bin.install "plat5"
@@ -29,15 +29,15 @@ class Plat5 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/plat5dev/cli/releases/download/v0.11.0/plat5_0.11.0_linux_amd64.tar.gz"
-      sha256 "859c8beaf94fb0c92194480555b72a349a8e2a32af2d059343210843e5090c19"
+      url "https://github.com/plat5dev/cli/releases/download/v0.12.0/plat5_0.12.0_linux_amd64.tar.gz"
+      sha256 "6e0a726ee9383c12dd5ed9669f11966a7c3e8e580d40c1e3c0bee48368287709"
       define_method(:install) do
         bin.install "plat5"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/plat5dev/cli/releases/download/v0.11.0/plat5_0.11.0_linux_arm64.tar.gz"
-      sha256 "09ae3e64c8be274026841f914d22c3f6397574a7ae815a949f30b897d146d5e4"
+      url "https://github.com/plat5dev/cli/releases/download/v0.12.0/plat5_0.12.0_linux_arm64.tar.gz"
+      sha256 "8ed0898cf2ff588aaef8b5ea3a9b06bd0b1da981225c9247361fa53050ccb47d"
       define_method(:install) do
         bin.install "plat5"
       end
